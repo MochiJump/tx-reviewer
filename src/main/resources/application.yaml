@@ -1,0 +1,24 @@
+spring.jackson:
+  default-property-inclusion: non_null
+  deserialization:
+    read-date-timestamps-as-nanoseconds: false
+    fail-on-unknown-properties: false
+  serialization:
+    write-date-timestamps-as-nanoseconds: false
+    write-empty-json-arrays: false
+
+mochijump.global:
+  harvestRewardsMethodNames:
+    - "Get Reward"
+    - "Harvest"
+    - "Claim Rewards"
+    - "Get Reward"
+    - "Harvest"
+    - "Claim Rewards"
+  exitLpMethodNames:
+    - "Exit"
+    - "Withdraw"
+    - "Withdraw And Harvest"
+  methodsThatCauseMissingInfo:
+    - "Swap Exact Tokens For ETH"
+    - "Swap Tokens For Exact ETH"
